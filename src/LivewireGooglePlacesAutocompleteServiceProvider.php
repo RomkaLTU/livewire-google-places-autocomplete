@@ -2,9 +2,9 @@
 
 namespace RomkaLTU\LivewireGooglePlacesAutocomplete;
 
+use RomkaLTU\LivewireGooglePlacesAutocomplete\Commands\LivewireGooglePlacesAutocompleteCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RomkaLTU\LivewireGooglePlacesAutocomplete\Commands\LivewireGooglePlacesAutocompleteCommand;
 
 class LivewireGooglePlacesAutocompleteServiceProvider extends PackageServiceProvider
 {
