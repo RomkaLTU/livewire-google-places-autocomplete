@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace RomkaLTU\LivewireGooglePlacesAutocomplete\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LivewireGooglePlacesAutocompleteCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'livewire-google-places-autocomplete';
 
     public $description = 'My command';
 

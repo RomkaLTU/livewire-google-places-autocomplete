@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "romkaltu/livewire-google-places-autocomplete",
+    "description": "Livewire component for google places autocomplete.",
     "keywords": [
-        ":vendor_name",
+        "RomkaLTU",
         "laravel",
-        ":package_slug"
+        "livewire-google-places-autocomplete"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/romkaltu/livewire-google-places-autocomplete",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "RD",
+            "email": "hello@codesomelabs.com",
             "role": "Developer"
         }
     ],
@@ -35,19 +35,19 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "RomkaLTU\\LivewireGooglePlacesAutocomplete\\": "src/",
+            "RomkaLTU\\LivewireGooglePlacesAutocomplete\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "RomkaLTU\\LivewireGooglePlacesAutocomplete\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
     "scripts": {
         "post-autoload-dump": "@composer run prepare",
-        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "clear": "@php vendor/bin/testbench package:purge-livewire-google-places-autocomplete --ansi",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
         "build": [
             "@composer run prepare",
@@ -73,10 +73,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "RomkaLTU\\LivewireGooglePlacesAutocomplete\\LivewireGooglePlacesAutocompleteServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LivewireGooglePlacesAutocomplete": "RomkaLTU\\LivewireGooglePlacesAutocomplete\\Facades\\LivewireGooglePlacesAutocomplete"
             }
         }
     },
