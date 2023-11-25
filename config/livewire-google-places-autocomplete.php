@@ -1,6 +1,5 @@
 <?php
 
-// config for RomkaLTU/LivewireGooglePlacesAutocomplete
 return [
-
+  'google_api_key' => env('GOOGLE_PLACES_API_KEY'),
 ];

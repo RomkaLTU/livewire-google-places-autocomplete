@@ -1,0 +1,13 @@
+{
+  "name": "livewire-google-places-autocomplete",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./resources/css/main.css -o ./resources/dist/main.css --watch",
+    "build": "npx tailwindcss -i ./resources/css/main.css -o ./resources/dist/main.css -m"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}

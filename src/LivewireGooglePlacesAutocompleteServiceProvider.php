@@ -2,7 +2,8 @@
 
 namespace RomkaLTU\LivewireGooglePlacesAutocomplete;
 
-use RomkaLTU\LivewireGooglePlacesAutocomplete\Commands\LivewireGooglePlacesAutocompleteCommand;
+use Livewire\Livewire;
+use RomkaLTU\LivewireGooglePlacesAutocomplete\Http\Livewire\LivewireGooglePlacesAutocomplete;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -10,16 +11,15 @@ class LivewireGooglePlacesAutocompleteServiceProvider extends PackageServiceProv
 {
     public function configurePackage(Package $package): void
     {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
         $package
             ->name('livewire-google-places-autocomplete')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_livewire-google-places-autocomplete_table')
-            ->hasCommand(LivewireGooglePlacesAutocompleteCommand::class);
+            ->hasAssets()
+            ->hasViews();
+    }
+
+    public function packageRegistered(): void
+    {
+        Livewire::component('livewire-google-places-autocomplete', LivewireGooglePlacesAutocomplete::class);
     }
 }
