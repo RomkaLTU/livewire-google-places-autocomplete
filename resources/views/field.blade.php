@@ -3,7 +3,7 @@
         <label for="{{ $elementId }}" class="lvgpa-label {{ $labelClass }}">
             {!! $label !!}
         </label>
-        <div class="w-full relative">
+        <div class="rd-w-full rd-relative">
           <input
             id="{{ $elementId }}"
             class="lvgpa-input {{ $inputClass }}"
@@ -15,12 +15,12 @@
             autocomplete="off"
             aria-controls="autocomplete-results" />
           @if($predictions)
-            <div id="lgpa-autocomplete-results" class="lvgpa-results absolute left-0 w-full bg-white border border-t-none border-gray-500 lvgpa-results divide-y divide-solid divide-gray-400 gap-y-2" role="listbox">
+            <div id="lgpa-autocomplete-results" class="lvgpa-results rd-absolute rd-left-0 rd-w-full rd-bg-white rd-border rd-border-solid rd-border-[#2d3748] rd-border-t-none rd-divide-y rd-divide-solid rd-divide-gray-400 rd-gap-y-2" role="listbox">
               @forelse($predictions as $index => $prediction)
                 <div
                   role="option"
                   tabindex="{{ $index }}"
-                  class="lvgpa-results-item p-2 cursor-pointer hover:bg-gray-200 p-2 focus:bg-gray-200"
+                  class="lvgpa-results-item rd-p-2 rd-cursor-pointer hover:rd-bg-gray-200 rd-p-2 focus:rd-bg-gray-200"
                   wire:key="{{ $prediction['place_id'] }}"
                   wire:keydown.escape="clear"
                   wire:keydown.arrow-down="focusNext({{ $index }})"
@@ -37,5 +37,5 @@
     </div>
 
     <link href="{{ asset('vendor/livewire-google-places-autocomplete/main.css') }}" rel="stylesheet">
-    <script src="{{ asset('vendor/livewire-google-places-autocomplete/app.js?v=1.01') }}" defer></script>
+    <script src="{{ asset('vendor/livewire-google-places-autocomplete/app.js') }}" defer></script>
 </div>

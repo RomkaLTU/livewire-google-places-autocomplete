@@ -3,6 +3,7 @@
 namespace RomkaLTU\LivewireGooglePlacesAutocomplete\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use RomkaLTU\LivewireGooglePlacesAutocomplete\LivewireGooglePlacesAutocompleteServiceProvider;
 
@@ -17,20 +18,16 @@ class TestCase extends Orchestra
         );
     }
 
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [
-            LivewireGooglePlacesAutocompleteServiceProvider::class,
+          LivewireServiceProvider::class,
+          LivewireGooglePlacesAutocompleteServiceProvider::class,
         ];
     }
 
-    public function getEnvironmentSetUp($app)
+    public function getEnvironmentSetUp($app): void
     {
         config()->set('database.default', 'testing');
-
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_livewire-google-places-autocomplete_table.php.stub';
-        $migration->up();
-        */
     }
 }
