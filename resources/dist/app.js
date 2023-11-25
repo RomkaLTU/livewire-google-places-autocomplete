@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   if (window.Livewire) {
     Livewire.on('focusNext', (nextIndex) => {
-      console.log('focusNext', nextIndex)
       document.querySelector(`[tabindex="${nextIndex}"]`).focus();
     });
 
