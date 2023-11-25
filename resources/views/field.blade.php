@@ -8,7 +8,7 @@
             id="{{ $elementId }}"
             class="lvgpa-input {{ $inputClass }}"
             type="text"
-            wire:model.debounce.700ms="search"
+            wire:model.debounce.300ms="search"
             wire:keydown.escape="clear"
             wire:keydown.arrow-down="focusNext(-1)"
             name="place"
