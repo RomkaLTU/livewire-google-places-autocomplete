@@ -70,4 +70,11 @@ class LivewireGooglePlacesAutocomplete extends Component
         $this->selectedPlace = $response->json('result');
         $this->search = $formattedAddress;
     }
+
+    public function clear(): void
+    {
+        $this->search = '';
+        $this->predictions = [];
+        $this->selectedPlace = null;
+    }
 }
