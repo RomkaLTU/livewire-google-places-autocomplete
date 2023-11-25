@@ -1,3 +1,4 @@
 # Changelog
 
-All notable changes to `Livewire google places autocomplete` will be documented in this file.
+## 1.0.0 (2023-11-25)
+- Initial release

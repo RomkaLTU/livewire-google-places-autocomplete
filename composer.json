@@ -2,8 +2,11 @@
     "name": "romkaltu/livewire-google-places-autocomplete",
     "description": "Livewire component for google places autocomplete.",
     "keywords": [
-        "RomkaLTU",
+        "codesomelabs",
         "laravel",
+        "livewire",
+        "google-places",
+        "google-places-autocomplete",
         "livewire-google-places-autocomplete"
     ],
     "homepage": "https://github.com/romkaltu/livewire-google-places-autocomplete",
