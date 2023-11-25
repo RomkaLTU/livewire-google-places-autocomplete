@@ -21,8 +21,8 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app): array
     {
         return [
-          LivewireServiceProvider::class,
-          LivewireGooglePlacesAutocompleteServiceProvider::class,
+            LivewireServiceProvider::class,
+            LivewireGooglePlacesAutocompleteServiceProvider::class,
         ];
     }
 
