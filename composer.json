@@ -19,7 +19,7 @@
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.1|^8.2|^8.3",
         "illuminate/contracts": "^10.0",
         "livewire/livewire": "v2.12.6",
         "spatie/laravel-package-tools": "^1.14.0"
@@ -82,7 +82,8 @@
             "aliases": {
                 "LivewireGooglePlacesAutocomplete": "RomkaLTU\\LivewireGooglePlacesAutocomplete\\Facades\\LivewireGooglePlacesAutocomplete"
             }
-        }
+        },
+        "exclude-from-classmap": ["/dependabot/"]
     },
     "minimum-stability": "dev",
     "prefer-stable": true
