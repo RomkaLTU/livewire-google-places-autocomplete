@@ -12,6 +12,7 @@
             wire:keydown.escape="clear"
             wire:keydown.arrow-down="focusNext(-1)"
             name="place"
+            value="{{ $value }}"
             autocomplete="off"
             aria-controls="autocomplete-results" />
           @if($predictions)

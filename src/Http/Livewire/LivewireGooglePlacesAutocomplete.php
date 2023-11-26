@@ -18,6 +18,8 @@ class LivewireGooglePlacesAutocomplete extends Component
 
     public string $class = '';
 
+    public string $value = '';
+
     public string $label = '';
 
     public string $labelClass = '';
