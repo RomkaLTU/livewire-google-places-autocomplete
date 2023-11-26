@@ -26,6 +26,11 @@ class LivewireGooglePlacesAutocomplete extends Component
 
     public string $inputClass = '';
 
+    public function mount(): void
+    {
+        $this->search = $this->value;
+    }
+
     public function render()
     {
         return view('livewire-google-places-autocomplete::field');
